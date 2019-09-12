@@ -1,0 +1,21 @@
+version: '3'
+services:
+  nest-db:
+    hostname: nest-db
+    build: ./db
+    container_name: nest-db
+    restart: always
+    volumes:
+      # init file for a new database
+      # - ./db/init/:/docker-entrypoint-initdb.d/
+      # for linux user, uncomment next line and
+      # and comment previous one to save pgdata
+      # on file system
+      - ./db/data:/var/lib/postgresql/data
+      - ./db/dump:/dump
+    ports:
+      - ${POSTGRES_PORT}:5432
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}

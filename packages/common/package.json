@@ -1,0 +1,9 @@
+{
+  "name": "@nest-nantejs/common",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "~3.4.3"
+  }
+}

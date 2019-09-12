@@ -1,4 +1,3 @@
-.idea
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
@@ -90,6 +89,3 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-db/dump/
-db/data/
-.idea/
