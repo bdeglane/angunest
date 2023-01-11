@@ -34,7 +34,7 @@
     "express-react-views": "^0.11.0",
     "express-session": "^1.16.2",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^0.19.1",
+    "knex": "^2.4.0",
     "lodash": "^4.17.15",
     "pg": "^7.12.1",
     "rambda": "^2.12.0",
